@@ -8,6 +8,7 @@ var VideoListContainer = () => {};
 // dispatchers with your VideoList component props.
 
 const mapStateToProps = state => {
+  console.log('videoList render ran.');
   return {
     videos: state.videoList
   }
@@ -15,7 +16,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    handleVideoListEntryTitleClick: video => {return dispatch(changeVideo(video))}
+    handleVideoListEntryTitleClick: video => {console.log("handleVideoListEntryTitleClick ran."); return dispatch(changeVideo(video))}
   }
 }
 

@@ -7,6 +7,7 @@ var VideoPlayerContainer = () => {};
 //dispatchers with your VideoPlayer component props.
 
 const mapStateToProps = state => {
+  console.log('VideoPlayer render ran.');
   return {
     video: state.currentVideo
   }

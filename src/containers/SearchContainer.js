@@ -11,7 +11,7 @@ var SearchContainer = () => {};
 
 const mapDispatchToProps = dispatch => {
   return {
-    handleSearchInputChange: value => dispatch(handleSearchChange(value))
+    handleSearchInputChange: value => { console.log("handleSearchInputChange ran."); return dispatch(handleSearchChange(value))}
   }
 }
 
